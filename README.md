@@ -78,7 +78,7 @@ The rest columns are calculated for alternative measurements of DV and for diffe
 
 The **Data Analysis** foler contains the core scripts used for the Hidden Markov Model (HMM). Specifically, it contains: 
 
-1. The Hidden Markov Model: (**Hidden Markov Model.py**). This is the main model for data analysis, which use the files in the data processing output folder folder **2-KPI-summary-with-weather**.
+1. The Hidden Markov Model: (**Hidden Markov Model.py**). This is the main model for data analysis, which use the files in the data processing output folder **2-KPI-summary-with-weather**.
 2. Initialization of parameters: Initial_parameters.csv. This file contains the initial papameters for HMM optimization. 
 3. Model outputs: coefficient_estimations.csv. This is the file contains the estimation results for all retail stores in the Raw Data folder.
 

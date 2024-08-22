@@ -15,28 +15,32 @@ The data processing and experiments were performed using Python on a server with
 ## Raw Data folder
 The **Raw Data** folder contains the log files of retail stores' daily operations. Specifically, each file is named by the store ID (sensored) and contains the following spreedsheets:
 
-1. **transaction\-inventory**. The ''transaction_inventory'' contains the daily sales, inventory, and stockout information. It has the following columns:
-	2. ''product id'': the ID of this product.
-	4. ''date'': ''day/month/year'' of this record.
-	4. ''sale'': total number of products sold on this day. Note: this column was transformed by randomly generating a number between the minimum and maximum number of product sales of this store.
-	5. "last selling time": the last time a product was sold on this day.
-	6. "inventory end of day": number of products to be wasted by the end of this day.
+**transaction\-inventory**. The ''transaction_inventory'' contains the daily sales, inventory, and stockout information. It has the following columns:
 
-2. **replenishment**. The "replenishment" sheet contains the daily replenishment operations made by human manager and AI. It has the following columns:
-	3. "product id": the ID of this product.
-	4. "product name": name of the product (replaced by the category of this product).
-	4. "order date": date the replenishment order is made.
-	5. "big class": the big category of this product.
-	6. "sub class": the subcategory of this product.
-	7. "final purchase bymanager": the real number of replenishment products.
-	8. "forecast demand third day": AI's replenishment decision.
 
-2. **modify\_delivery\_by\_manager**: this sheet contains the detailed reason and changes for the tasks not delegated to AI. It has the following columns:
-	3. "product id": the ID of this product.
-	4. "order date": date the replenishment order is made.
-	5. "expect by manager": manager's estimation on product sales.
-	6. "forecast": decisions made by AI.
-	7. "reason": manager's reason of not delegating this task to AI. 
+* ''product id'': the ID of this product.
+2. ''date'': ''day/month/year'' of this record.
+3. ''sale'': total number of products sold on this day. Note: this column was transformed by randomly generating a number between the minimum and maximum number of product sales of this store.
+4. "last selling time": the last time a product was sold on this day.
+5. "inventory end of day": number of products to be wasted by the end of this day.
+
+**replenishment**. The "replenishment" sheet contains the daily replenishment operations made by human manager and AI. It has the following columns:
+
+* "product id": the ID of this product.
+2. "product name": name of the product (replaced by the category of this product).
+3. "order date": date the replenishment order is made.
+4. "big class": the big category of this product.
+5. "sub class": the subcategory of this product.
+6. "final purchase bymanager": the real number of replenishment products.
+7. "forecast demand third day": AI's replenishment decision.
+
+**modify\_delivery\_by\_manager**: this sheet contains the detailed reason and changes for the tasks not delegated to AI. It has the following columns:
+
+* "product id": the ID of this product.
+4. "order date": date the replenishment order is made.
+5. "expect by manager": manager's estimation on product sales.
+6. "forecast": decisions made by AI.
+7. "reason": manager's reason of not delegating this task to AI. 
 	
 ## Data Processing folder
 The **Data Processing** folder contains the calculation of KPIs for weekly performance evaluation. This folder has five subfolders, including three output folders (**0-Logsummary**, **1-KPIsummary**, and **2-KPI-summary-with-weather**), one folder for codes (**CodeProcessing**), and one folder for other input data (**OtherInputs). Specifically, the data processing has the following three steps: 
@@ -48,7 +52,7 @@ The **Data Processing** folder contains the calculation of KPIs for weekly perfo
 ###*Output Folder*
 The folder **2-KPI-summary-with-weather** is the outputs of data processing, which contains the research data for data analysis. Specifically, each file in this folder represents a sequence of delegation decisions, KPIs, and weather and holiday conditions for a single retail store (the sensored name of this file). It contains the following columns:
 
-1. period: number of weeks since the AI was introduced to this store.
+* period: number of weeks since the AI was introduced to this store.
 2. DelegationDecision: percentage of tasks delegated to AI.
 3. sale_improvement	: Team vs. Human, the manager's sales improvement in period t after AI implementation.
 4. Manager_outperform: Team vs. AI, sales performance comparison between order by pure system and order after the manager's modification'' in period t.
@@ -58,7 +62,7 @@ The folder **2-KPI-summary-with-weather** is the outputs of data processing, whi
 
 The rest columns are calculated for alternative measurements of DV and for different categories of items.
 
-8. DelegationDecision\_demand: percentage of tasks delegated to AI at the product-quantity level.
+* DelegationDecision\_demand: percentage of tasks delegated to AI at the product-quantity level.
 9. DelegationDecision\_bakery: percentage of tasks for bakery products delegated to AI.
 10. DelegationDecision\_dairy: percentage of tasks for dairy products delegated to AI.
 11. sale_bakery\_improvement: Team vs. Human, the manager's sales improvement in period t after AI implementation for bakery products.

@@ -37,10 +37,10 @@ The **Raw Data** folder contains the log files of retail stores' daily operation
 **modify\_delivery\_by\_manager**: this sheet contains the detailed reason and changes for the tasks not delegated to AI. It has the following columns:
 
 * "product id": the ID of this product.
-4. "order date": date the replenishment order is made.
-5. "expect by manager": manager's estimation on product sales.
-6. "forecast": decisions made by AI.
-7. "reason": manager's reason of not delegating this task to AI. 
+* "order date": date the replenishment order is made.
+* "expect by manager": manager's estimation on product sales.
+* "forecast": decisions made by AI.
+* "reason": manager's reason of not delegating this task to AI. 
 	
 ## Data Processing folder
 The **Data Processing** folder contains the calculation of KPIs for weekly performance evaluation. This folder has five subfolders, including three output folders (**0-Logsummary**, **1-KPIsummary**, and **2-KPI-summary-with-weather**), one folder for codes (**CodeProcessing**), and one folder for other input data (**OtherInputs). Specifically, the data processing has the following three steps: 
@@ -53,24 +53,24 @@ The **Data Processing** folder contains the calculation of KPIs for weekly perfo
 The folder **2-KPI-summary-with-weather** is the outputs of data processing, which contains the research data for data analysis. Specifically, each file in this folder represents a sequence of delegation decisions, KPIs, and weather and holiday conditions for a single retail store (the sensored name of this file). It contains the following columns:
 
 * period: number of weeks since the AI was introduced to this store.
-2. DelegationDecision: percentage of tasks delegated to AI.
-3. sale_improvement	: Team vs. Human, the manager's sales improvement in period t after AI implementation.
-4. Manager_outperform: Team vs. AI, sales performance comparison between order by pure system and order after the manager's modification'' in period t.
-5.  outperform_area: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t
-6. BadWeather: Number of days with bad weather (rainy, snowy, etc.) in period t.
-7. Holiday: Number of holidays in period t.
+* DelegationDecision: percentage of tasks delegated to AI.
+* sale_improvement	: Team vs. Human, the manager's sales improvement in period t after AI implementation.
+* Manager_outperform: Team vs. AI, sales performance comparison between order by pure system and order after the manager's modification'' in period t.
+*  outperform_area: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t
+* BadWeather: Number of days with bad weather (rainy, snowy, etc.) in period t.
+* Holiday: Number of holidays in period t.
 
 The rest columns are calculated for alternative measurements of DV and for different categories of items.
 
 * DelegationDecision\_demand: percentage of tasks delegated to AI at the product-quantity level.
-9. DelegationDecision\_bakery: percentage of tasks for bakery products delegated to AI.
-10. DelegationDecision\_dairy: percentage of tasks for dairy products delegated to AI.
-11. sale_bakery\_improvement: Team vs. Human, the manager's sales improvement in period t after AI implementation for bakery products.
-12. sale\_dairy\_improvement: Team vs. Human, the manager's sales improvement in period t after AI implementation for dairy products.
-13. Manager\_outperform\_bakery: Team vs. AI, sales performance comparison between order by pure system and order after the manager's modification'' in period t for bakery products.
-14. Manager\_outperform\_dairy: eam vs. AI, sales performance comparison between order by pure system' and order after the manager's modification in period t for dairy products.
-15. outperform\_area\_bakery: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t for bakery products.
-16. outperform\_area\_dairy: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t for dairy products.
+* DelegationDecision\_bakery: percentage of tasks for bakery products delegated to AI.
+* DelegationDecision\_dairy: percentage of tasks for dairy products delegated to AI.
+* sale_bakery\_improvement: Team vs. Human, the manager's sales improvement in period t after AI implementation for bakery products.
+* sale\_dairy\_improvement: Team vs. Human, the manager's sales improvement in period t after AI implementation for dairy products.
+* Manager\_outperform\_bakery: Team vs. AI, sales performance comparison between order by pure system and order after the manager's modification'' in period t for bakery products.
+* Manager\_outperform\_dairy: eam vs. AI, sales performance comparison between order by pure system' and order after the manager's modification in period t for dairy products.
+* outperform\_area\_bakery: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t for bakery products.
+* outperform\_area\_dairy: Team vs. Team, difference of sales improvement between the retail store and the regional average after AI implementation in period t for dairy products.
 
 
 ## Data Analysis folder

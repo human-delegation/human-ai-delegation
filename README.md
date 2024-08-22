@@ -31,8 +31,9 @@ The **Raw Data** folder contains the log files of retail stores' daily operation
 * "order date": date the replenishment order is made.
 * "big class": the big category of this product.
 * "sub class": the subcategory of this product.
+* "optimal purchase bymodel": model's replenishment decision.
 * "final purchase bymanager": the real number of replenishment products.
-* "forecast demand third day": AI's replenishment decision.
+* "demand third day": AI's replenishment decision.
 
 **modify\_delivery\_by\_manager**: this sheet contains the detailed reason and changes for the tasks not delegated to AI. It has the following columns:
 

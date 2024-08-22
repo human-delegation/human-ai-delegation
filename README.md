@@ -36,7 +36,7 @@ The **Raw Data** folder contains the log files of retail stores' daily operation
 	4. "order date": date the replenishment order is made.
 	5. "expect by manager": manager's estimation on product sales.
 	6. "forecast": decisions made by AI.
-	7. "reason": manager's reason of not delegating this task to AI.
+	7. "reason": manager's reason of not delegating this task to AI. 
 	
 ## Data Processing folder
 The **Data Processing** folder contains the calculation of KPIs for weekly performance evaluation. This folder has five subfolders, including three output folders (**0-Logsummary**, **1-KPIsummary**, and **2-KPI-summary-with-weather**), one folder for codes (**CodeProcessing**), and one folder for other input data (**OtherInputs). Specifically, the data processing has the following three steps: 

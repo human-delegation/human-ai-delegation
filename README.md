@@ -19,20 +19,20 @@ The **Raw Data** folder contains the log files of retail stores' daily operation
 
 
 * ''product id'': the ID of this product.
-2. ''date'': ''day/month/year'' of this record.
-3. ''sale'': total number of products sold on this day. Note: this column was transformed by randomly generating a number between the minimum and maximum number of product sales of this store.
-4. "last selling time": the last time a product was sold on this day.
-5. "inventory end of day": number of products to be wasted by the end of this day.
+* ''date'': ''day/month/year'' of this record.
+* ''sale'': total number of products sold on this day. Note: this column was transformed by randomly generating a number between the minimum and maximum number of product sales of this store.
+* "last selling time": the last time a product was sold on this day.
+* "inventory end of day": number of products to be wasted by the end of this day.
 
 **replenishment**. The "replenishment" sheet contains the daily replenishment operations made by human manager and AI. It has the following columns:
 
 * "product id": the ID of this product.
-2. "product name": name of the product (replaced by the category of this product).
-3. "order date": date the replenishment order is made.
-4. "big class": the big category of this product.
-5. "sub class": the subcategory of this product.
-6. "final purchase bymanager": the real number of replenishment products.
-7. "forecast demand third day": AI's replenishment decision.
+* "product name": name of the product (replaced by the category of this product).
+* "order date": date the replenishment order is made.
+* "big class": the big category of this product.
+* "sub class": the subcategory of this product.
+* "final purchase bymanager": the real number of replenishment products.
+* "forecast demand third day": AI's replenishment decision.
 
 **modify\_delivery\_by\_manager**: this sheet contains the detailed reason and changes for the tasks not delegated to AI. It has the following columns:
 

@@ -3,11 +3,14 @@
 # Enter feature description here
 
 # Enter Scenario herer: This code is used for HMM model with general number of hidden states: state_n>=2
+
 # Enter steps here:
-# 1. The code will get input data from HMM_Input folder
-# 2. The input data is separated into emission related factors and transition related factors
+# 1. The code will get input data from 2-KPI-summary-with-weather folder
+# 2. The input data is the initial values of emission related factors and transition related factors
+#### 2.1 To deliver the best fit, different initial values should be used for the best MLE
 # 3. BFGS fitting is implemented to fit the data with MLE maximization (-log MLE minimization)
-# 4. The fitting result is stored in the Aggregate_table and output in HMM_Fitting_Results folder
+# 4. The fitting result is stored in the Coefficients_estimation table and output
+
 
 import os
 import numpy as np

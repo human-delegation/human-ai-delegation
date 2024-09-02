@@ -1,6 +1,6 @@
 # AI Delegation Project
 
-The materials in this repository are a snapshot of the data and codes used in the research reported in the paper MISQ 2022-RN-18232. The repository contains THREE folders: **Raw Data**, **Data Processing**, and **Data Analysis**. The raw data in this public repository has the same format as the company's raw data. Due to the Non-Disclosure Agreement with the company that provided the dataset, the raw data is censored and transformed in this public repository. 
+The materials in this repository are the data and codes used in the research reported in the paper MISQ 2022-RN-18232. The repository contains THREE folders: **Raw Data**, **Data Processing**, and **Data Analysis**. The raw data in this public repository has the same format as the company's raw data, including the daily delegation decisions and operations of 875 store managers. Due to the Non-Disclosure Agreement with the company that provided the dataset, the raw data is censored and transformed in this public repository. 
 
 ## Requirements
 

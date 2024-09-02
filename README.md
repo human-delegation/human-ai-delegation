@@ -2,6 +2,9 @@
 
 The materials in this repository are the data and codes used in the research reported in the paper MISQ 2022-RN-18232. The repository contains THREE folders: **Raw Data**, **Data Processing**, and **Data Analysis**. The raw data in this public repository has the same format as the company's raw data, including the daily delegation decisions and operations of 875 store managers. Due to the Non-Disclosure Agreement with the company that provided the dataset, the raw data is censored and transformed in this public repository. 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13629497.svg)](https://doi.org/10.5281/zenodo.13629497)
+
+
 ## Requirements
 
 The data processing and experiments were performed using Python on a server with 2X 10-core Intel Xeon Gold 5215 Processor, 1 TB RAM. For this project, we use the following Python Packages:

@@ -49,7 +49,7 @@ The **Data Processing** folder contains the calculation of KPIs for weekly perfo
 2. calculate KPI (**Step2-KPICalculate.py**): in this step, we calculate the overall store-level KPIs that were presented to the store managers, and the KPIs for some sub-categories of products for robustness tests.
 3. merge weather and holiday information (**Step3-MergeWeatherHoliday.py**). We combine the weekly KPIs, the weather and holiday information for that week.
 
-###*Output Folder*
+### *Output*
 The folder **2-KPI-summary-with-weather** is the output of data processing, which contains the research data for data analysis. Specifically, each file in this folder represents a sequence of delegation decisions, KPIs, and weather and holiday conditions for a single retail store (the censored name of this file). It contains the following columns:
 
 * date: index of period after AI deployment.
